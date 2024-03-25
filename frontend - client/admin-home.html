@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>ABC-Lab - Super Admin</title>
+    <meta name="title" content="ABC-Lab - Super Admin">
+
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+    <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+
+</head>
+
+<body id="top">
+
+    <div class="preloader" data-preloader>
+        <div class="circle"></div>
+    </div>
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" width="136" height="46" alt="ABC-Lab home">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <div class="navbar-top">
+
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo.svg" width="136" height="46" alt="ABC-Lab home">
+                    </a>
+
+                    <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                </div>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="reg-user.html" class="navbar-link title-md">Add User</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="appointments.html" class="navbar-link title-md">Appointments</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="report-view.html" class="navbar-link title-md">View Reports</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="reports.html" class="navbar-link title-md">Reports</a>
+                    </li>
+
+                </ul>
+
+                <ul class="social-list">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-pinterest"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+
+            <a href="login.html" class="btn has-before title-md">Logout</a>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+    <main>
+        <article>
+
+            <section class="section hero" style="background-image: url('./assets/images/hero-bg.png')"
+                aria-label="home">
+                <div class="container">
+
+                    <div class="hero-content">
+
+                        <p class="hero-subtitle has-before" data-reveal="left">Welcome To ABC-Lab</p>
+
+                        <h1 class="headline-lg hero-title" data-reveal="left">
+                            Get your Lab <br>
+                            reports x10 Faster.
+                        </h1>
+
+                    </div>
+
+                    <figure class="hero-banner" data-reveal="right">
+                        <img src="./assets/images/hero-banner.png" width="590" height="517" loading="eager"
+                            alt="hero banner" class="w-100">
+                    </figure>
+
+                </div>
+            </section>
+
+            <section class="user">
+                <h2>Users table</h2>
+                <table id="user-table">
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody id="user-table-body">
+
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="service" aria-label="service">
+                <div class="container">
+
+                    <ul class="service-list">
+
+                        <li>
+                            <div class="service-card" data-reveal="bottom">
+
+                                <div class="card-icon">
+                                    <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy"
+                                        alt="icon">
+                                </div>
+
+                                <h3 class="headline-sm card-title">
+                                    <a href="#">Psychiatry</a>
+                                </h3>
+
+                                <p class="card-text">
+                                    ABC Laboratory provides comprehensive psychiatry services, offering advanced
+                                    diagnostics and personalized treatment plans.
+                                </p>
+
+                                <button class="btn-circle" aria-label="read more about psychiatry">
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </button>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card" data-reveal="bottom">
+
+                                <div class="card-icon">
+                                    <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy"
+                                        alt="icon">
+                                </div>
+
+                                <h3 class="headline-sm card-title">
+                                    <a href="#">Gynecology</a>
+                                </h3>
+
+                                <p class="card-text">
+                                    ABC Laboratory specializes in gynecological services, offering state-of-the-art
+                                    diagnostics and compassionate care for women's health issues.
+                                </p>
+
+                                <button class="btn-circle" aria-label="read more about Gynecology">
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </button>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card" data-reveal="bottom">
+
+                                <div class="card-icon">
+                                    <img src="./assets/images/icon-3.png" width="71" height="71" loading="lazy"
+                                        alt="icon">
+                                </div>
+
+                                <h3 class="headline-sm card-title">
+                                    <a href="#">Pulmonology</a>
+                                </h3>
+
+                                <p class="card-text">
+                                    ABC Laboratory offers advanced pulmonology services, specializing in the diagnosis
+                                    and treatment of respiratory conditions with cutting-edge technology and expertise.
+                                </p>
+
+                                <button class="btn-circle" aria-label="read more about Pulmonology">
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </button>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card" data-reveal="bottom">
+
+                                <div class="card-icon">
+                                    <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy"
+                                        alt="icon">
+                                </div>
+
+                                <h3 class="headline-sm card-title">
+                                    <a href="#">Orthopedics</a>
+                                </h3>
+
+                                <p class="card-text">
+                                    ABC Laboratory specializes in orthopedic services, offering advanced treatments and
+                                    surgical solutions for musculoskeletal conditions to improve patients' mobility and
+                                    quality of life.
+                                </p>
+
+                                <button class="btn-circle" aria-label="read more about Orthopedics">
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </button>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+            <section class="section about" aria-labelledby="about-label">
+                <div class="container">
+
+                    <div class="about-content">
+
+                        <p class="section-subtitle title-lg has-after" id="about-label" data-reveal="left">About Us</p>
+
+                        <h2 class="headline-md" data-reveal="left">Experienced Workers</h2>
+
+                        <p class="section-text" data-reveal="left">
+                            ABC Laboratory in Sri Lanka boasts experienced workers dedicated to providing exceptional
+                            services in healthcare diagnostics and treatment. Our team is committed to excellence and
+                            compassionate care for all our patients.
+                        </p>
+
+                        <ul class="tab-list" data-reveal="left">
+
+                            <li>
+                                <button class="tab-btn active">Vision</button>
+                            </li>
+
+                            <li>
+                                <button class="tab-btn">Mission</button>
+                            </li>
+
+                            <li>
+                                <button class="tab-btn">Strategy</button>
+                            </li>
+
+                        </ul>
+
+                        <p class="tab-text" data-reveal="left">
+                            At ABC Laboratory, our vision is to become a leading healthcare institution in Sri Lanka,
+                            offering advanced diagnostics and personalized care to improve the health and well-being of
+                            our community.
+                        </p>
+
+                        <div class="wrapper">
+
+                            <ul class="about-list">
+
+                                <li class="about-item" data-reveal="left">
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                                    <span class="span">Empowerment: We strive to empower individuals by providing access
+                                        to quality healthcare services.</span>
+                                </li>
+
+                                <li class="about-item" data-reveal="left">
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                                    <span class="span">Innovation: We are committed to continuous innovation in
+                                        healthcare delivery.</span>
+                                </li>
+
+                                <li class="about-item" data-reveal="left">
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                                    <span class="span">Community Engagement: We actively engage with our
+                                        community.</span>
+                                </li>
+
+                                <li class="about-item" data-reveal="left">
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                                    <span class="span">Sustainability: We are committed to environmental and financial
+                                        sustainability.</span>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <figure class="about-banner" data-reveal="right">
+                        <img src="./assets/images/about-banner.png" width="554" height="678" loading="lazy"
+                            alt="about banner" class="w-100">
+                    </figure>
+
+                </div>
+            </section>
+
+            <section class="section listing" aria-labelledby="listing-label">
+                <div class="container">
+
+                    <ul class="grid-list">
+
+                        <li>
+                            <p class="section-subtitle title-lg" id="listing-label" data-reveal="left">Doctors Listing
+                            </p>
+
+                            <h2 class="headline-md" data-reveal="left">Browse by specialist</h2>
+                        </li>
+
+                        <li>
+                            <div class="listing-card" data-reveal="bottom">
+
+                                <div class="card-icon">
+                                    <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy"
+                                        alt="icon">
+                                </div>
+
+                                <div>
+                                    <h3 class="headline-sm card-title">Psychiatrists</h3>
+
+                                    <p class="card-text">Specialists in diagnosing and treating mental health disorders.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="listing-card" data-reveal="bottom">
+
+                                <div class="card-icon">
+                                    <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy"
+                                        alt="icon">
+                                </div>
+
+                                <div>
+                                    <h3 class="headline-sm card-title">Gynecologists</h3>
+
+                                    <p class="card-text">Experts in women's reproductive health and wellness.</p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="listing-card" data-reveal="bottom">
+
+                                <div class="card-icon">
+                                    <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy"
+                                        alt="icon">
+                                </div>
+
+                                <div>
+                                    <h3 class="headline-sm card-title">Pulmonologists</h3>
+
+                                    <p class="card-text">Specialists in diagnosing and treating respiratory disorders.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="listing-card" data-reveal="bottom">
+
+                                <div class="card-icon">
+                                    <img src="./assets/images/icon-5.png" width="71" height="71" loading="lazy"
+                                        alt="icon">
+                                </div>
+
+                                <div>
+                                    <h3 class="headline-sm card-title">Orthopedic Surgeons</h3>
+
+                                    <p class="card-text">Experts in treating musculoskeletal conditions and injuries.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="listing-card" data-reveal="bottom">
+
+                                <div class="card-icon">
+                                    <img src="./assets/images/icon-6.png" width="71" height="71" loading="lazy"
+                                        alt="icon">
+                                </div>
+
+                                <div>
+                                    <h3 class="headline-sm card-title">Pediatricians</h3>
+
+                                    <p class="card-text">Specialists in providing medical care for infants, children,
+                                        and adolescents.</p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="listing-card" data-reveal="bottom">
+
+                                <div class="card-icon">
+                                    <img src="./assets/images/icon-7.png" width="71" height="71" loading="lazy"
+                                        alt="icon">
+                                </div>
+
+                                <div>
+                                    <h3 class="headline-sm card-title">Osteologists</h3>
+
+                                    <p class="card-text">Experts in diagnosing and treating bone disorders and diseases.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+            <section class="section blog" aria-labelledby="blog-label">
+                <div class="container">
+
+                    <p class="section-subtitle title-lg text-center" id="blog-label" data-reveal="bottom">
+                        Latest News & Articles
+                    </p>
+
+                    <h2 class="section-title headline-md text-center" data-reveal="bottom">Explore Our Latest Articles
+                    </h2>
+
+                    <ul class="grid-list">
+
+                        <li>
+                            <div class="blog-card has-before has-after" data-reveal="bottom">
+
+                                <div class="meta-wrapper">
+
+                                    <div class="card-meta">
+                                        <ion-icon name="person-outline"></ion-icon>
+
+                                        <span class="span">By ABC Laboratory</span>
+                                    </div>
+
+                                    <div class="card-meta">
+                                        <ion-icon name="folder-outline"></ion-icon>
+
+                                        <span class="span">Health & Wellness</span>
+                                    </div>
+
+                                </div>
+
+                                <h3 class="headline-sm card-title">Discover the Benefits of Regular Exercise</h3>
+
+                                <time class="title-sm date" datetime="2024-03-12">12 March, 2024</time>
+
+                                <p class="card-text">
+                                    Regular exercise offers numerous health benefits, including improved cardiovascular
+                                    health, enhanced mood, and increased energy levels. Explore the importance of
+                                    incorporating exercise into your daily routine.
+                                </p>
+
+                                <a href="#" class="btn-text title-lg">Read More</a>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="blog-card has-before has-after" data-reveal="bottom">
+
+                                <div class="meta-wrapper">
+
+                                    <div class="card-meta">
+                                        <ion-icon name="person-outline"></ion-icon>
+
+                                        <span class="span">By ABC Laboratory</span>
+                                    </div>
+
+                                    <div class="card-meta">
+                                        <ion-icon name="folder-outline"></ion-icon>
+
+                                        <span class="span">Nutrition</span>
+                                    </div>
+
+                                </div>
+
+                                <h3 class="headline-sm card-title">Exploring the Impact of Diet on Mental Health</h3>
+
+                                <time class="title-sm date" datetime="2024-03-10">10 March, 2024</time>
+
+                                <p class="card-text">
+                                    Learn how your diet can influence your mental health and well-being. Discover the
+                                    best foods to support brain health and improve mood, cognition, and overall mental
+                                    wellness.
+                                </p>
+
+                                <a href="#" class="btn-text title-lg">Read More</a>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="blog-card has-before has-after" data-reveal="bottom">
+
+                                <div class="meta-wrapper">
+
+                                    <div class="card-meta">
+                                        <ion-icon name="person-outline"></ion-icon>
+
+                                        <span class="span">By ABC Laboratory</span>
+                                    </div>
+
+                                    <div class="card-meta">
+                                        <ion-icon name="folder-outline"></ion-icon>
+
+                                        <span class="span">Healthcare Technology</span>
+                                    </div>
+
+                                </div>
+
+                                <h3 class="headline-sm card-title">Advancements in Telemedicine: Revolutionizing
+                                    Healthcare Access</h3>
+
+                                <time class="title-sm date" datetime="2024-03-08">08 March, 2024</time>
+
+                                <p class="card-text">
+                                    Explore the latest advancements in telemedicine technology and how they are
+                                    transforming healthcare delivery. Learn about the benefits of virtual consultations
+                                    and remote monitoring for patients and providers alike.
+                                </p>
+
+                                <a href="#" class="btn-text title-lg">Read More</a>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+            <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+                <div class="container">
+
+                    <div class="section footer-top">
+
+                        <div class="footer-brand" data-reveal="bottom">
+
+                            <a href="#" class="logo">
+                                <img src="./assets/images/logo.svg" width="136" height="46" loading="lazy"
+                                    alt="ABC-Lab home">
+                            </a>
+
+                            <ul class="contact-list has-after">
+
+                                <li class="contact-item">
+
+                                    <div class="item-icon">
+                                        <ion-icon name="mail-open-outline"></ion-icon>
+                                    </div>
+
+                                    <div>
+                                        <p>
+                                            Main Email : <a href="mailto:contact@srlab.com"
+                                                class="contact-link">contact@srlab.com</a>
+                                        </p>
+
+                                        <p>
+                                            Inquiries : <a href="mailto:info@srlab.com"
+                                                class="contact-link">info@srlab.com</a>
+                                        </p>
+                                    </div>
+
+                                </li>
+
+                                <li class="contact-item">
+
+                                    <div class="item-icon">
+                                        <ion-icon name="call-outline"></ion-icon>
+                                    </div>
+
+                                    <div>
+                                        <p>
+                                            Office Telephone : <a href="tel:+94123456789" class="contact-link">+94 123
+                                                456 789</a>
+                                        </p>
+
+                                        <p>
+                                            Mobile : <a href="tel:+94123456789" class="contact-link">+94 123 456 789</a>
+                                        </p>
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="footer-list" data-reveal="bottom">
+
+                            <p class="headline-sm footer-list-title">About Us</p>
+
+                            <p class="text">
+                                ABC-Lab is dedicated to providing high-quality healthcare services and promoting
+                                wellness in our community.
+                            </p>
+
+                            <address class="address">
+                                <ion-icon name="map-outline"></ion-icon>
+
+                                <span class="text">
+                                    123 Main Street <br>
+                                    Colombo, Sri Lanka
+                                </span>
+                            </address>
+
+                        </div>
+
+                        <ul class="footer-list" data-reveal="bottom">
+
+                            <li>
+                                <p class="headline-sm footer-list-title">Services</p>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text footer-link">Conditions</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text footer-link">Listing</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text footer-link">How It Works</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text footer-link">What We Offer</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text footer-link">Latest News</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text footer-link">Contact Us</a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="footer-list" data-reveal="bottom">
+
+                            <li>
+                                <p class="headline-sm footer-list-title">Useful Links</p>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text footer-link">Conditions</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text footer-link">Terms of Use</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text footer-link">Our Services</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text footer-link">Join as a Doctor</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text footer-link">New Guests List</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text footer-link">The Team List</a>
+                            </li>
+
+                        </ul>
+
+                        <div class="footer-list" data-reveal="bottom">
+
+                            <p class="headline-sm footer-list-title">Subscribe</p>
+
+                            <form action="" class="footer-form">
+                                <input type="email" name="email" placeholder="Email" class="input-field title-lg">
+
+                                <button type="submit" class="btn has-before title-md">Subscribe</button>
+                            </form>
+
+                            <p class="text">
+                                Get the latest updates via email. Any time you may unsubscribe
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="footer-bottom">
+
+                        <p class="text copyright">
+                            &copy; ABC-Lab 2024 | All Rights Reserved by ABC-Lab
+                        </p>
+
+                        <ul class="social-list">
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-google"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-pinterest"></ion-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </footer>
+
+            <script src="./assets/js/script.js"></script>
+            <script src="./resc/script.js"></script>
+
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
