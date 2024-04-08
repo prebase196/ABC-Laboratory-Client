@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (response.ok) {
                     console.log('Registration successful');
                     showModal('Registration successful');
-                    window.location.href = 'admin-home.html';
+                    document.getElementById("reg-form").reset();
                 } else {
                     console.error('Registration failed');
                     showModal('Registration failed');
